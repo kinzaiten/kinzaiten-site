@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kinzaiten.github.io/kinzaiten-site/sitemap.xml

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>お問い合わせ｜金財天</title>
+  <meta name="description" content="金財天へのお問い合わせ。無料査定のご相談はお電話またはフォームから。" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="./index.html#top">
+          <img class="logowide" src="./img/logo.png" alt="買取専門店 金財天" width="379" height="88">
+          <span class="sitename">
+            <span class="shoptype">買取専門店</span>
+            <span class="shopname">金財天</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="サイトメニュー">
+          <a href="./index.html#flow">買取の流れ</a>
+          <a href="./index.html#items">買取品目</a>
+          <a href="./index.html#store">店舗情報</a>
+          <a href="./index.html#faq">よくある質問</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./privacy.html">プライバシー</a>
+        </nav>
+
+        <a class="btn success" href="tel:+817017488444">☎ 電話で相談</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="./index.html#top">← ホームに戻る</a></div>
+        <h1>お問い合わせ</h1>
+        <p class="lead">お急ぎの方はお電話ください。お問い合わせフォームは24時間受付です。</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid2">
+
+          <div class="card contact-side">
+            <h2><a href="tel:+817017488444">☎ 070-1748-8444</a></h2>
+            <p class="muted">「〇〇を査定したい」とお伝えください。ご案内します。</p>
+            <a class="btn success" href="tel:+817017488444">☎ 電話で相談</a>
+            <p class="muted" style="margin-top:10px;font-size:13px;">
+              電話受付時間<br>
+              月〜土：9:30〜16:30（17:00閉店）<br>
+              日曜　：9:30〜14:30（15:00閉店）<br>
+              ※木曜定休
+            </p>
+
+            <div class="pill" style="margin-top:12px">
+              <strong>お電話の前にご確認ください</strong>
+              <div class="muted">品物の種類・点数・付属品（箱 / 保証書など）が分かるとスムーズです。</div>
+            </div>
+
+            <div class="pill" style="margin-top:12px">
+              <strong>フォームでも受付</strong>
+              <div class="muted">営業時間外はフォームから送信してください。</div>
+              <a class="btn primary" href="#form" style="margin-top:10px">お問い合わせフォーム</a>
+            </div>
+          </div>
+
+          <div class="card" id="form">
+            <h2>お問い合わせフォーム（24時間受付）</h2>
+
+            <form action="https://formspree.io/f/mwvryplq" method="POST">
+              <div style="margin-top:10px">
+                <label for="name">お名前</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+
+              <div style="margin-top:10px">
+                <label for="tel">電話番号（任意）</label>
+                <input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="例）0312345678" />
+              </div>
+
+              <div style="margin-top:10px">
+                <label for="email">メールアドレス</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div style="margin-top:10px">
+                <label for="item">品目（任意）</label>
+                <input id="item" name="item" type="text" placeholder="例）時計 / ブランドバッグ / 貴金属 など" />
+              </div>
+
+              <div style="margin-top:10px">
+                <label for="msg">内容</label>
+                <textarea id="msg" name="message" required placeholder="例）時計の査定希望。来店できるのは土曜午後です。"></textarea>
+              </div>
+
+              <div class="pill" style="margin-top:12px">
+                <strong>個人情報の取扱い</strong>
+                <div class="muted" style="font-size:13px;margin-top:6px;">
+                  送信いただいた情報はお問い合わせ対応のために利用します。
+                  <a href="./privacy.html">プライバシーポリシー</a>をご確認ください。
+                </div>
+
+                <label for="agree" style="
+                  margin-top:10px;
+                  display:flex;
+                  align-items:center;
+                  gap:10px;
+                  padding:12px 14px;
+                  border:1px solid var(--line);
+                  background:var(--card);
+                  border-radius:12px;
+                  cursor:pointer;
+                  user-select:none;
+                ">
+                  <input id="agree" name="agree" type="checkbox" required style="
+                    width:18px;
+                    height:18px;
+                    margin:0;
+                    flex:0 0 auto;
+                  ">
+                  <span style="font-weight:600;">同意します <span style="color:var(--muted);">（必須）</span></span>
+                </label>
+              </div>
+
+              <div style="margin-top:12px">
+                <button class="btn primary" type="submit">送信する</button>
+              </div>
+
+              <p class="muted" style="margin:10px 0 0;font-size:12px;">
+                ※お問い合わせ内容を確認の上、3営業日以内に担当者よりご連絡いたします。
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> 買取専門店 金財天</div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

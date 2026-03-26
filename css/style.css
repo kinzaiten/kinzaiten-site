@@ -1,3 +1,4 @@
+
 :root{
   --bg:#ffffff;
   --text:#0f172a;
@@ -160,10 +161,18 @@ h1{
 h2{font-size:22px; margin:0 0 10px}
 h3{font-size:17px; margin:0 0 8px}
 
+.catch{
+  margin: 10px 0 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--text);
+}
+
 .lead{
   color:var(--muted);
-  margin:0 0 14px;
-  font-size:1.05rem;
+  margin:0 0 16px;
+  font-size:1rem;
 }
 
 .muted{color:var(--muted)}
@@ -340,7 +349,19 @@ footer{
   background:#fff;
 }
 
-/* Contact page sticky (PC only) */
+form button.btn{
+  display:block;
+  margin:20px auto 0;
+  padding:16px 28px;
+  font-size:16px;
+}
+
+.form-note{
+  margin:10px 0 0;
+  font-size:12px;
+  color:var(--muted);
+  text-align:center;
+}
 @media (min-width: 861px){
   .contact-side{
     position:sticky;

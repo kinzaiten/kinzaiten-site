@@ -38,7 +38,7 @@
           <a href="./privacy.html">プライバシー</a>
         </nav>
 
-        <a class="btn success" href="tel:0120984845">☎ 電話で相談</a>
+        <a id="telbtn" class="btn success"></a>
       </div>
     </div>
   </header>
@@ -154,6 +154,16 @@
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
+    const p1 = "0120";
+    const p2 = "984";
+    const p3 = "845";
+    const tel = p1+p2+p3;
+    
+    const telbtn = document.getElementById("telbtn");
+    if(telbtn){
+      telbtn.href = "tel:"+tel;
+      telbtn.innerHTML = "☎ 電話で相談";
+    }
   </script>
 </body>
 </html>

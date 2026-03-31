@@ -60,7 +60,7 @@
           <a href="./privacy.html">プライバシー</a>
         </nav>
 
-        <a class="btn success" href="tel:0120984845">☎ 電話で相談</a>
+        <a id="telbtn" class="btn success"></a>
       </div>
     </div>
   </header>
@@ -177,7 +177,10 @@
                 日曜日　　　9:30-15:00
               </td></tr>
               <tr><th>定休日</th><td>木曜日</td></tr>
-              <tr><th>フリーダイヤル</th><td><a href="tel:0120984845">☎ 0120-984-845</a></td></tr>
+              <tr>
+                <th>フリーダイヤル</th>
+                <td id="tel-pc"></td>
+              </tr>
               <tr>
                 <th>電話受付時間</th>
                   <td>
@@ -230,7 +233,7 @@
             <p class="muted">お急ぎの方はお電話ください。査定は店頭でのご案内となります。<br>
               事前のご相談・ご質問はフォームから承っております。</p>
             <div class="kv-actions">
-              <a class="btn success" href="tel:0120984845">☎ 電話で相談</a>
+              <a id="telbtn2" class="btn success"></a>
               <a class="btn primary" href="./contact.html">お問い合わせフォーム</a>
             </div>
           </div>
@@ -272,6 +275,30 @@
       <div>© <span id="y"></span> 買取専門店　金財天</div>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const p1 = "0120";
+    const p2 = "984";
+    const p3 = "845";
+    const tel = p1+p2+p3;
+    
+    const telbtn = document.getElementById("telbtn");
+    if(telbtn){
+      telbtn.href = "tel:"+tel;
+      telbtn.innerHTML = "☎ 電話で相談";
+    }
+    
+    const t1="0120";
+    const t2="984";
+    const t3="845";
+    document.getElementById("tel-pc").textContent ="☎ " + t1 + "-" + t2 + "-" + t3;
+    
+    const telbtn2 = document.getElementById("telbtn2");
+    if(telbtn2){
+      telbtn2.href = "tel:"+tel;
+      telbtn2.innerHTML = "☎ 電話で相談";
+    }
+  
+  </script>
 </body>
 </html>
